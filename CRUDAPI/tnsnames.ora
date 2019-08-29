@@ -1,0 +1,872 @@
+################ MODEL / STAGING TNS ##################################################
+
+WaltModel_DBS =(DESCRIPTION=(ADDRESS_LIST =(ADDRESS=(PROTOCOL = TCP)(HOST=devracscan.ditech.us)(PORT=1550)))(CONNECT_DATA=(SERVICE_NAME=WaltModel_DBS.ditech.us)))
+WaltReportModel_DBS =(DESCRIPTION=(ADDRESS_LIST =(ADDRESS=(PROTOCOL = TCP)(HOST=devracscan.ditech.us)(PORT=1550)))(CONNECT_DATA=(SERVICE_NAME=WaltReportModel_DBS.ditech.us)))
+WaltStage_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=WaltModel_DBS.ditech.us)))
+DataStageModel_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME= DataStageModel_DBS.ditech.us)))
+SwitchModel_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME= SwitchModel_DBS.ditech.us)))
+PLTradeModel_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME= PLTradeModel_DBS.ditech.us)))
+MBXMODEL_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME= MBXMODEL_DBS.ditech.us)))
+EclipsModel_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME= EclipsModel_DBS.ditech.us)))
+RetentionDBModel_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME= RetentionDBModel_DBS.ditech.us)))
+MBXMSMODEL_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME= MBXMSMODEL_DBS.ditech.us)))
+CMSStage_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME= CMSModel_DBS.ditech.us)))
+CMSModel_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME= CMSModel_DBS.ditech.us)))
+MIWarehouseModel_DBS= (DESCRIPTION= (ADDRESS= (PROTOCOL=TCP) (HOST=devracscan.ditech.us) (PORT=1550) ) (CONNECT_DATA= (SERVER=dedicated) (SERVICE_NAME=MIWarehouseModel_DBS.ditech.us) ) )
+GMSHAREMODEL_DBS= (DESCRIPTION= (ADDRESS= (PROTOCOL=TCP) (HOST=devracscan.ditech.us) (PORT=1550) ) (CONNECT_DATA= (SERVER=dedicated) (SERVICE_NAME=GMSHAREMODEL_DBS.ditech.us) ) )
+CliWebModel_DBS= (DESCRIPTION= (ADDRESS= (PROTOCOL=TCP) (HOST=devracscan.ditech.us) (PORT=1550) ) (CONNECT_DATA= (SERVER=dedicated) (SERVICE_NAME=CliWebModel_DBS.ditech.us) ) )
+EncompStage_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = EncompStage_DBS.ditech.us)))
+EclipseTrain_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=EclipseTrain_DBS.ditech.us)))
+EDIModel_DBS= (DESCRIPTION= (ADDRESS= (PROTOCOL=TCP) (HOST=devracscan.ditech.us) (PORT=1550) ) (CONNECT_DATA= (SERVER=dedicated) (SERVICE_NAME=EDIModel_DBS.ditech.us) ) )
+EncompModel_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = EncompModel_DBS.ditech.us)))
+EQAppsMode_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = EQAppsMode_DBS.ditech.us)))
+GmtlsTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = GmtlsTest_DBS.ditech.us)))
+INTG02Model_DBS=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = INTG02Model_DBS.ditech.us)))
+IntgModel_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = IntgModel_DBS.ditech.us)))
+MFAMODEL_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = MFAMODEL_DBS.ditech.us)))
+MFAOffRepModel_DBS=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = MFAOffRepModel_DBS.ditech.us)))
+MTGIWNEWModel_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = MTGIWNEWModel_DBS.ditech.us)))
+ALMPerfCntModel_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = ALMPerfCntModel_DBS.ditech.us)))
+ALMQAMgmtModel_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = ALMQAMgmtModel_DBS.ditech.us)))
+QcalmmtModel_DBS=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = QcalmmtModel_DBS.ditech.us)))
+RegcompModel_DBS=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = RegcompModel_DBS.ditech.us)))
+TLSModel_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = TLSModel_DBS.ditech.us)))
+TlspmModel_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = TlspmModel_DBS.ditech.us)))
+WikiModel_DBS=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = WikiModel_DBS.ditech.us)))
+SDRMModel_DBS=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = devracscan.ditech.us)(PORT = 1550))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = SDRMModel_DBS.ditech.us)))
+CMSStage_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME= CMSModel_DBS.ditech.us)))
+
+###################### Production TNS ###################################################
+
+SDRPTXN_RDS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST= sdrptxn-rstr-20180808.cjeaoeb1yrrr.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=SDRPTXN)))
+SDRPTXN-RSTR_RDS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST= sdrptxn-rstr.cjeaoeb1yrrr.us-east-1.rds.amazonaws.com:1521)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=SDRPTXN)))
+RMSPROD_RDS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST= rmsp.cmvdwdjjmnjz.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=RMSP)))
+Oemrepprod_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = Oemrepprod_DBS.ditech.us)))
+
+SDRPROD_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = SDRP.ditech.us)))
+CMSProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = CMSP.ditech.us)))
+WALTPROD_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = WLTP.ditech.us)))
+CliWebProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = CWMORTGP.ditech.us)))
+DataStageProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1621))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = DSMETAP.ditech.us)))
+EncompProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = ENCOMPP.ditech.us)))
+Fni02Prod_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = Fni02.ditech.us)))
+FNIPROD_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = FNI.ditech.us)))
+MBXPROD_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = MBXP.ditech.us)))
+MBXProdStage_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = MBXPS.ditech.us)))
+MBXPSPROD_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = MBXPS.ditech.us)))
+MIWarehouseProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1621))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = MTGIWP.ditech.us)))
+PLTradeProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1621))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = PLTRDP.ditech.us)))
+RegcompProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1621))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = REGCOMP.ditech.us)))
+RetentionDBProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=devracscan.ditech.us)(PORT=1550))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = RetentionDBProd_DBS.ditech.us)))
+SwitchProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = WLIP.ditech.us)))
+WLIPProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = WLIP.ditech.us)))
+WaltProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = WLTP.ditech.us)))
+WaltReportProd_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mnlxracp02.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = WLTP.ditech.us)))
+
+
+
+
+###########################################DEVELOPMENT DATABASES###############################
+
+EclipseDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=EclipsDev_DBS.ditech.us)))
+EclipseReportDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=EclipseReportDev_DBS.ditech.us)))
+CMSDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=CMSDev_DBS.ditech.us)))
+EncompDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=EncompDev_DBS.ditech.us)))
+MBXDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=MBXDev_DBS.ditech.us)))
+MBXDSDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=MBXDSDev_DBS.ditech.us)))
+PLTradeDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=PLTradeDev_DBS.ditech.us)))
+WaltDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=WaltDev_DBS.ditech.us)))
+WaltReportDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=WaltReportDev_DBS.ditech.us)))
+WLTPRPT =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = pldb011.ditech.us)(PORT = 1675))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = WLTPRPT)))
+CliWebDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=CliWebDev_DBS.ditech.us)))
+MFADev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=MFADev_DBS.ditech.us)))
+MEMFAD_MFAOffRepDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=MEMFAD_MFAOffRepDev_DBS.ditech.us)))
+RegcompDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=RegcompDev_DBS.ditech.us)))
+SwitchDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=SwitchDev_DBS.ditech.us)))
+
+
+
+################ TEST DATABASES ############################
+
+MBXTest_DBS =(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME =MBXTest_DBS.ditech.us)))
+MBXSTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =MBXSTest_DBS.ditech.us)))
+CMSTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =CMSTest_DBS.ditech.us)))
+WaltTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =WaltTest_DBS.ditech.us)))
+WaltReportTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =WaltReportTest_DBS.ditech.us)))
+EclipseTest_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=EclipseTest_DBS.ditech.us)))
+SwitchTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =SwitchTest_DBS.ditech.us)))
+PLTradeTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =PLTradeTest_DBS.ditech.us)))
+EclipseReportTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =EclipseReportTest_DBS.ditech.us)))
+EncompTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =EncompTest_DBS.ditech.us)))
+MFATest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =MFATest_DBS.ditech.us)))
+MEMFAT_MFAOffRepTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =MEMFAT_MFAOffRepTest_DBS.ditech.us)))
+CliWebTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =CliWebTest_DBS.ditech.us)))
+DataStageTest_DBS =(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME =DataStageTest_DBS.ditech.us)))
+RegcompTest_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=RegcompTest_DBS.ditech.us)))
+MIWarehouseTest_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=MIWarehouseTest_DBS.ditech.us)))
+
+ALMQAMgmtDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ALMQAMgmtDev_DBS.ditech.us)))
+ALMPerfCntDev_DBS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=testracscan.ditech.us)(PORT=1750))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ALMPerfCntDev_DBS.ditech.us)))
+
+
+FNITest_DBS =(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME =FNITest_DBS.ditech.us)))
+FNI02Test_DBS =(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = testracscan.ditech.us)(PORT = 1750))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME =FNI02Test_DBS.ditech.us)))
+
+
+########################## AWS DATABASES ############################################
+
+RMSDev_RDS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST= rmsd.cmvdwdjjmnjz.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=RMSD)))
+#RMSDev_RDS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=RMSDEV-RDS)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=RMSD)))
+#SDRP_RDS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=sdrp_rds.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=ORCL)))
+RMSPROD_RDS=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST= rmsp.cmvdwdjjmnjz.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=RMSP)))
+SDRMTXN_RDS.ditech.us=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST= sdrmtxn.ceiej6swwsit.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=SDRMTXN)))
+SDRPTXN_RDS.ditech.us=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST= SDRPTXN_RDS.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=SDRPTXN)))
+SDRP_RDS.ditech.us=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST= SDRP_RDS.ditech.us)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=SDRPRD)))
+
+
+
+
+################# Servicing Databases  ###########################
+
+# Filename......: tnsnames.ora
+# Date..........: March 03, 2017 file updated for Repodesk and fortracs dev/test to RAC
+# 
+##############################################################################################
+#                                tnsnames.ora
+##############################################################################################
+##############################################################################################
+#				         Securitization	
+#
+##############################################################################################
+# NETS
+DNETS =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+     (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = dnets_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+
+TNETS =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+     (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = tnets_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+
+QNETS =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+     (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = qnets_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+PNETS =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+     (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pnets_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+
+
+
+PSEC_RAC =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+     (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = psec_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+PSEC =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = psec_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+PSEC.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+     (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = psec_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+ASEC =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = asec_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+ASEC.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = asec_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+DSEC =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = dsec_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+DSEC.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = dsec_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+TSEC =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = tsec_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+TSEC.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = tsec_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+##############################################################################################
+#				         Customer Complaints	
+#  
+##############################################################################################
+
+PJIRA =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pjira_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+DJIRA =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = djira.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+##############################################################################################
+#				         Capital Markets	
+#  
+##############################################################################################
+PLPS =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+     (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = plps_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+PLPS.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = plps_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+PVID =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+     (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pvid_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+PVID.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pvid_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+
+##############################################################################################
+#                                        ESCROW 
+#  
+##############################################################################################
+
+PESC.WORLD, PESC =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pesc_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+
+TESC.WORLD, TESC =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com))(PORT = 1521))
+     (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = tesc_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+TESCB.WORLD, TESCB =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com))(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = tescb_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+DESC.WORLD, DESC =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com))(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = desc_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+##############################################################################################
+#                                   Escrow RePORTing
+#  
+##############################################################################################
+PERP =
+  (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = perp_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+PERP.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = perp_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+TERP =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = terp_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+TERP.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = terp_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+##############################################################################################
+#                                          DayBreak
+#  
+##############################################################################################
+pday1.world, pday1 =
+     (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pday_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+
+ 
+tday1.world, tday1, tday.world, tday =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = tport01.gtfc.com)(PORT = 1521))
+        (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = tday_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )  
+ 
+  
+DDAY1.WORLD, DDAY1,DDAY.WORLD, DDAY =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = tport01.gtfc.com)(PORT = 1521))
+        (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = dday_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )  
+ 
+ 
+#  
+##############################################################################################
+#                                          Fortracs 
+#  
+##############################################################################################
+
+PFT1.WORLD, PFT1 =
+   (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pft_ui.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+PFT2.WORLD, PFT2 =
+   (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pft_batch.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+
+TFT1.WORLD, TFT1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = tport01.gtfc.com)(PORT = 1521))
+        (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = tft_ui.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )  
+    
+TFT2.WORLD, TFT2 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = tport01.gtfc.com)(PORT = 1521))
+        (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = tft_batch.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )  
+  
+DFT1.WORLD, DFT1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = tport01.gtfc.com)(PORT = 1521))
+        (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = dft_ui.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )  
+ 
+DFT2.WORLD, DFT2 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = tport01.gtfc.com)(PORT = 1521))
+        (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = dft_batch.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )  
+  
+##############################################################################################
+#                                           
+###############################################################################################
+
+##############################################################################################
+#			                           CML
+#  
+##############################################################################################
+PCML1.WORLD =
+    (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pcml_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+tcml1.world =
+   (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = tcml_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+##############################################################################################
+#			        	             Tax 
+#  
+##############################################################################################
+ttax1.world =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = ttax_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+PTAX1.WORLD =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+     (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = ptax_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+##############################################################################################
+#                                         Ecom
+#  
+##############################################################################################
+PECOM.WORLD, PECOM =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pecom_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+
+#########################################################################################
+tdoc.world =
+   (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sport01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = tdoc_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+
+pdoc.world =
+   (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = sporp01.gtfc.com)(PORT = 1521))
+     (ADDRESS = (PROTOCOL = TCP)(HOST = tporp01.gtfc.com)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = pdoc_rac.gtfc.com)
+      (FAILOVER_MODE =
+        (TYPE = SELECT)
+        (METHOD = BASIC)
+        (RETRIES = 180)
+        (DELAY = 5)
+      )
+    )
+  )
+
+TUMS_DR_TEST=
+(DESCRIPTION =
+(ADDRESS_LIST =
+(ADDRESS=(PROTOCOL= TCP)(HOST=devracscan.ditech.us)(PORT = 1550)))
+(CONNECT_DATA =
+(SERVER = DEDICATED)
+(SERVICE_NAME = TUMS_DR_TEST)
+)
+)
