@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CRUDAPIStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="EMPLOYEEDETAILS">
+      <EntityTypeMapping TypeName="CRUDAPI.EMPLOYEEDETAIL">
+        <MappingFragment StoreEntitySet="EMPLOYEEDETAILS">
+          <ScalarProperty Name="EMPID" ColumnName="EMPID" />
+          <ScalarProperty Name="EMPNAME" ColumnName="EMPNAME" />
+          <ScalarProperty Name="DATEOFBIRTH" ColumnName="DATEOFBIRTH" />
+          <ScalarProperty Name="EMAILID" ColumnName="EMAILID" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="PINCODE" ColumnName="PINCODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
